@@ -1,13 +1,12 @@
----
 Name: mysql
 Description: MySQL is a multi-user, multi-threaded SQL database server.
-Version: '5.7.10'
+Version: 5.7.10
 License: GPL
 Vendor: Oracle
 Website: http://www.mysql.com
 Display-Name: MySQL 5.7.10
 Cartridge-Short-Name: MYSQL
-Cartridge-Version: '1.0.0'
+Cartridge-Version: 1.0.0
 Cartridge-Vendor: renesamaral
 Categories:
 - service
@@ -17,15 +16,12 @@ Help-Topics:
   MySQL Documentation: http://dev.mysql.com/doc/
 Provides:
 - mysql
-
 Scaling:
   Min: 1
   Max: 1
-
 Publishes:
   publish-db-connection-info:
     Type: ENV:NET_TCP:db:connection-info
-
 Endpoints:
 - Private-IP-Name: DB_HOST
   Private-Port-Name: DB_PORT
@@ -33,3 +29,4 @@ Endpoints:
   Public-Port-Name: DB_PROXY_PORT
   Protocols:
   - mysql
+Source-Url: https://github.com/renesamaral/openshift-mysql5.7.10-cartridge/archive/master.zip
